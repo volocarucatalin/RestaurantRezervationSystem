@@ -1,0 +1,41 @@
+
+<div class = "container col-md-6">
+  <h1 style="color: rgb(235, 231, 240);" > Rezervation Form</h1>
+    <form class=" container" (ngSubmit) ="addCostumerData()">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label" style="color: aliceblue;">First Name</label>
+            <input class="form-control" id ="firstName" name = "firstName" [(ngModel)] = "customer.firstName">
+          </div>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"  style="color: aliceblue;">Last Name</label>
+            <input  class="form-control" id ="lastName" name = "lastName" [(ngModel)] = "customer.lastName" >
+          </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"  style="color: aliceblue;">Phone Number</label>
+            <input type="phone" class="form-control" id ="phoneNumber" name = "phoneNumber" [(ngModel)] = "customer.phoneNumber" placeholder="07********">
+          </div>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"  style="color: aliceblue;">Number of People</label>
+            <input  class="form-control" id ="numOfP" name = "numOfP" [(ngModel)] = "customer.numOfP" placeholder="Max 8 Persons">
+          </div>
+
+        <div class = "date">
+          <label for="exampleFormControlInput1" class="form-label"  style="color: aliceblue;">Date</label>
+          <input class= "form-control" format="yyyy-mm-dd" type="date" id ="date" name = "date" [(ngModel)] = "customer.date">
+        </div><br><br>
+
+        <div class = "">
+          <label for="exampleFormControlInput1" class="form-label"  style="color: aliceblue;">Booking Hour</label>
+          <input  value="00:00:00" type="time" step="1" id ="time" name = "time" [(ngModel)] = "customer.time"><br><br>
+        </div>
+        
+        <button class="btn btn-primary" type="submit">Reserve</button>
+
+      
+    </form>
+</div>
+
+

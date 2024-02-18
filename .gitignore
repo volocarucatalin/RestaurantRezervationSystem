@@ -1,0 +1,78 @@
+###Git ignore for server project ####
+/server/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+/server/.apt_generated
+/server/.classpath
+/server/.factorypath
+/server/.project
+/server/.settings
+/server/.springBeans
+
+### IntelliJ IDEA ###
+/server/.idea
+/server/*.iws
+/server/*.iml
+
+
+###Git ignore for client project ####
+.DS_STORE
+
+/client/dist/
+/client/bazel-out
+/client/integration/bazel/bazel-*
+/client*.log
+/client/node_modules/
+
+# Include when developing application packages.
+pubspec.lock
+/client/.c9
+/client/.idea/
+/client/.devcontainer/*
+!.devcontainer/README.md
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+/client/.settings/
+/client/.vscode/launch.json
+/client/.vscode/settings.json
+/client/.vscode/tasks.json
+/client/*.swo
+/client/*.swp
+/client/modules/.settings
+/client/modules/.vscode
+/client/.vimrc
+/client/.nvimrc
+
+# Don't check in secret files
+/client/*secret.js
+
+# Ignore npm/yarn debug log
+/client/npm-debug.log
+/client/yarn-error.log
+
+# build-analytics
+/client/.build-analytics
+
+# rollup-test output
+/client/modules/rollup-test/dist/
+
+# User specific bazel settings
+/client/.bazelrc.user
+
+# User specific ng-dev settings
+/client/.ng-dev.user*
+
+/client/.notes.md
+/client/baseline.json
+
+# Ignore .history for the xyz.local-history VSCode extension
+/client/.history
+
+# Husky
+/client/.husky/_
+/client/aio/content/examples/.DS_Store
+
+
+# Ignore cache created with the Angular CLI.
+/client/.angular/

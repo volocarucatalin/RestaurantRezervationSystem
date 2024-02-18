@@ -1,0 +1,31 @@
+<html>
+<body>
+  <div class="container">
+    <table class="table" style="border: 0; text-align:left; background-color:non">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone Number</th>
+          <th>Num Of People</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customer">
+          <td>{{customer.firstName}}</td>
+          <td>{{customer.lastName}}</td>
+          <td>{{customer.phoneNumber}}</td>
+          <td>{{customer.numOfP}}</td>
+          <td>{{customer.date|date}}</td>
+          <td>{{customer.time}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<body>
+
+</body>
+</html>

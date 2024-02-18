@@ -1,0 +1,16 @@
+.h1 {
+    text-align: center;
+  }
+
+input [type="date"]{
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+}
+
+input:focus{
+  border: 5xp solid rgb(173, 160, 160);
+}
+
