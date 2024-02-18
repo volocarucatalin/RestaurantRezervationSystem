@@ -10,7 +10,6 @@ public class CustomerResponse implements Serializable {
     public CustomerResponse(){
 
     }
-
     public CustomerResponse(Integer id) {
         this.id = id;
     }
